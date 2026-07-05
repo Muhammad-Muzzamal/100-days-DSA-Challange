@@ -1,0 +1,10 @@
+services:
+  cpp:
+    image: gcc:14.4.0-trixie
+    container_name: cpp
+    working_dir: /app
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+    command: sleep infinity
